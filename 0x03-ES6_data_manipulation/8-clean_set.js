@@ -1,11 +1,11 @@
 export default function cleanSet(set, startString) {
-  if (typeof set !== "object" || typeof startString !== "string") {
-    return "";
+  if (typeof set !== 'object' || typeof startString !== 'string') {
+    return '';
   }
   if (!startString) {
-    return "";
+    return '';
   }
-  let result = "";
+  let result = '';
   for (const item of set) {
     if (item && item.startsWith(startString)) {
       result += `${item.slice(startString.length)}-`;
