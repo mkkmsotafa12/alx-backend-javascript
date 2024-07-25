@@ -1,5 +1,22 @@
 {
-  "devDependencies": {
-    "mocha": "^10.7.0"
-  }
+    "name": "unittest",
+    "version": "1.0.0",
+    "description": "unit test project js",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "test": "node ./node_modules/mocha/bin/mocha"
+    },
+    "env": {
+        "node": true
+    },
+    "author": "Mostafa Kamal",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^8.57.0",
+        "mocha": "^10.3.0",
+        "sinon": "^7.5.0"
+    },
+    "dependencies": {}
 }
